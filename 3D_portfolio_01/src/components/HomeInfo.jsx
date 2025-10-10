@@ -16,8 +16,9 @@ const HomeInfo = ({ currentStage }) => {
 
   if (currentStage === 2) {
     return (
+      
       <div className='info-box'>
-        <p className='font-medium sm:text-xl text-center'>
+        <p className='font-medium sm:text-xl text-center neo-brutalism-blue py-4 px-8'>
           Worked with many companies <br /> and picked up many skills along the way
         </p>
 
@@ -32,7 +33,7 @@ const HomeInfo = ({ currentStage }) => {
   if (currentStage === 3) {
     return (
       <div className='info-box'>
-        <p className='font-medium text-center sm:text-xl'>
+        <p className='font-medium text-center sm:text-xl neo-brutalism-blue py-4 px-8'>
           Led multiple projects to success over the years. <br /> Curious about the impact?
         </p>
 
@@ -47,7 +48,7 @@ const HomeInfo = ({ currentStage }) => {
   if (currentStage === 4) {
     return (
       <div className='info-box'>
-      <p className='font-medium sm:text-xl text-center'>
+      <p className='font-medium sm:text-xl text-center neo-brutalism-blue py-4 px-8'>
         Need a project done or looking for a dev? <br/> I'm just a few keystrokes away
       </p>
 
