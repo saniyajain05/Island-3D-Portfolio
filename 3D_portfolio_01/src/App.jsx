@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import { Home, About, Projects, Contact } from "./pages";
+import Portfolio from "./pages/portfolio"
 import Navbar from "./components/Navbar";
 
 const App = () => {
