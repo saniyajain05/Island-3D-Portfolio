@@ -5,29 +5,29 @@ import { arrow } from "../assets/icons";
 // Example data: you can also import this from constants/portfolioLinks.js
 const portfolioItems = [
   {
-    name: "3D Character Animation Reel",
+    name: "Authenticating - a Solo 3D Short Film",
     description:
-      "A collection of my 3D animation shots featuring character performance, lip sync, and physical acting.",
-    link: "https://youtu.be/your_animation_reel_link",
+      "A solo 3D animated short film about Guy. Guy thinks that AI and automation are the best things that happened to humanity. In is giddy with glee to finally get his automated AI run car - BEST DAY EVER. In his carelessness and hurry to try his sweet new ride, he locks his car away with just a facial recognition; what he doesn't know is that while driving, he cannot change anything without authenticating his face! Will he be able to stop the car in time, or is this ride going to truly be the ride of a lifetime?",
+    link: "https://vimeo.com/1121339170",
     iconUrl: "/assets/icons/animation.png", // update to your actual icon
     theme: "bg-blue-500",
   },
   {
-    name: "Environment Design Showcase",
+    name: "3D Modeling, Texturing and Rigging",
     description:
-      "A showcase of 3D environments created using Blender and Unreal Engine.",
-    link: "https://yourportfolio.com/environment",
+      "A showcase of 3D of my modeling, texturing, and rigging work using Maya, ZBrush, and Substance Painter.",
+    link: "https://saniyajain6.artstation.com/albums/11661566",
     iconUrl: "/assets/icons/environment.png",
     theme: "bg-green-500",
   },
-  {
-    name: "Modeling Portfolio",
-    description:
-      "A collection of 3D models and textures I’ve created for projects and commissions.",
-    link: "https://yourportfolio.com/models",
-    iconUrl: "/assets/icons/modeling.png",
-    theme: "bg-purple-500",
-  },
+  // {
+  //   name: "Modeling Portfolio",
+  //   description:
+  //     "A collection of 3D models and textures I’ve created for projects and commissions.",
+  //   link: "https://yourportfolio.com/models",
+  //   iconUrl: "/assets/icons/modeling.png",
+  //   theme: "bg-purple-500",
+  // },
 ];
 
 const Portfolio = () => {
@@ -43,7 +43,7 @@ const Portfolio = () => {
       <div className="w-full flex justify-center my-10">
         <div className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-lg">
             <iframe
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            src="https://player.vimeo.com/video/1126105849"
             title="Animation Reel"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

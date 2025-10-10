@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import  CTA  from "../components/CTA";
-import { projects } from "../constants/socialLinks";
+import  projects  from "../constants/socialLinks";
 import { arrow } from "../assets/icons";
 
 const Projects = () => {
