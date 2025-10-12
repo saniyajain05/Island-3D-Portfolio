@@ -53,7 +53,7 @@ const About = () => {
         <div className="w-full flex justify-center">
           <div className="relative w-full max-w-4xl aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-slate-200">
             <iframe
-              src=resumePDF
+              src={resumePDF}
               title="Saniya Jain Portfolio PDF"
               className="w-full h-full"
             ></iframe>
