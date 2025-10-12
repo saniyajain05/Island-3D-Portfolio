@@ -10,7 +10,7 @@ const HomeInfo = ({ currentStage }) => {
         <span className='font-semibold mx-2 text-white'>Saniya</span>
         👋
         <br />
-        A 3D Artist and Animator!
+        A 3D Animator and Computer Scientist!
       </h1>
     );
 
@@ -19,11 +19,11 @@ const HomeInfo = ({ currentStage }) => {
       
       <div className='info-box'>
         <p className='font-medium sm:text-xl text-center neo-brutalism-blue py-4 px-8'>
-          Worked with many companies <br /> and picked up many skills along the way
+          Always been Passionate about both <br/> So Best of both Worlds!
         </p>
 
         <Link to='/about' className='neo-brutalism-white neo-btn'>
-          Learn more
+          Which Sodtwares do I use and my Resume
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
       </div>
@@ -34,11 +34,11 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl neo-brutalism-blue py-4 px-8'>
-          Led multiple projects to success over the years. <br /> Curious about the impact?
+          Look at the Projects I've Done!
         </p>
 
         <Link to='/projects' className='neo-brutalism-white neo-btn'>
-          Visit my portfolio
+          Projects
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
       </div>
@@ -49,11 +49,11 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
       <p className='font-medium sm:text-xl text-center neo-brutalism-blue py-4 px-8'>
-        Need a project done or looking for a dev? <br/> I'm just a few keystrokes away
+        Look at the my Portfolio!
       </p>
 
       <Link to='/contact' className='neo-brutalism-white neo-btn'>
-        Let's talk
+        Portfolio
         <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
       </Link>
     </div>
