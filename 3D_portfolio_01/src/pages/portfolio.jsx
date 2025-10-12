@@ -43,7 +43,7 @@ const Portfolio = () => {
       <div className="w-full flex justify-center my-10">
         <div className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-lg">
             <iframe
-            src="https://player.vimeo.com/1126261521"
+            src="https://player.vimeo.com/video/1126261521"
             title="Animation Reel"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
