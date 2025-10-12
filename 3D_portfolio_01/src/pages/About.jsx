@@ -4,47 +4,80 @@ import {
 } from "react-vertical-timeline-component";
 
 import CTA from "../components/CTA";
-// import { experiences, skills } from "../constants/socialLinks";
 import { skills } from "../constants/socialLinks";
 
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
-    <section className='max-container'>
-      <h1 className='head-text'>
+    <section className="max-container">
+      <h1 className="head-text">
         Hello, I'm{" "}
-        <span className='blue-gradient_text font-semibold drop-shadow'>
+        <span className="blue-gradient_text font-semibold drop-shadow">
           {" "}
           Saniya
         </span>{" "}
         👋
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>
-          An Animator and Computer Scientist!
-        </p>
+      <div className="mt-5 flex flex-col gap-3 text-slate-500">
+        <p>An Animator and Computer Scientist!</p>
       </div>
 
-      <div className='py-10 flex flex-col'>
-        <h3 className='subhead-text'>My Skills</h3>
+      {/* === Skills Section === */}
+      <div className="py-10 flex flex-col">
+        <h3 className="subhead-text">My Skills</h3>
 
-        <div className='mt-16 flex flex-wrap gap-12'>
+        <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <div className='block-container w-20 h-20' key={skill.name}>
-              <div className='btn-back rounded-xl' />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
+            <div className="block-container w-20 h-20" key={skill.name}>
+              <div className="btn-back rounded-xl" />
+              <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
+                  className="w-1/2 h-1/2 object-contain"
                 />
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* === PDF Portfolio Section === */}
+      <div className="py-16 flex flex-col items-center">
+        <h3 className="subhead-text mb-8">My Portfolio PDF</h3>
+
+        <div className="w-full flex justify-center">
+          <div className="relative w-full max-w-4xl aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+            <iframe
+              src="/assets/Saniya_Resume_Master.pdf"
+              title="Saniya Jain Portfolio PDF"
+              className="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+
+        <div className="mt-6">
+          <a
+            href="/assets/docs/PortfolioShowcase.pdf"
+            download
+            className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition font-medium"
+          >
+            Download PDF
+          </a>
+        </div>
+      </div>
+
+      <hr className="border-slate-200" />
+
+      <CTA />
+    </section>
+  );
+};
+
+export default About;
+
 
       {/* <div className='py-16'>
         <h3 className='subhead-text'>Work Experience.</h3>
@@ -106,11 +139,4 @@ const About = () => {
         </div>
       </div> */}
 
-      <hr className='border-slate-200' />
-
-      <CTA />
-    </section>
-  );
-};
-
-export default About;
+      
