@@ -65,7 +65,7 @@ const Contact = () => {
 
           showAlert({
             show: true,
-            text: "I didn't receive your message 😢",
+            text: "I didn't receive your message 😢 Please email saniyajain05@gmail.com directly!",
             type: "danger",
           });
         }
