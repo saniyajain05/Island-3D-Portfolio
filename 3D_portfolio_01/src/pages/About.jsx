@@ -5,6 +5,8 @@ import {
 
 import CTA from "../components/CTA";
 import { skills } from "../constants/socialLinks";
+import resumePDF from "../assets/Saniya_Resume_Master.pdf";
+
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -51,7 +53,7 @@ const About = () => {
         <div className="w-full flex justify-center">
           <div className="relative w-full max-w-4xl aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-slate-200">
             <iframe
-              src="/assets/Saniya_Resume_Master.pdf"
+              src=resumePDF
               title="Saniya Jain Portfolio PDF"
               className="w-full h-full"
             ></iframe>
@@ -60,7 +62,7 @@ const About = () => {
 
         <div className="mt-6">
           <a
-            href="/assets/docs/PortfolioShowcase.pdf"
+            href={resumePDF}
             download
             className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition font-medium"
           >
