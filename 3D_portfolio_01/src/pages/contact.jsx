@@ -6,6 +6,7 @@ import { Fox } from "../models/fox";
 import useAlert from "../hooks/useAlert";
 import Loader from "../components/Loader";
 import  Alert  from "../components/Alert";
+import Footer from '../components/footer' 
 
 const Contact = () => {
   const formRef = useRef();
@@ -73,6 +74,7 @@ const Contact = () => {
   };
 
   return (
+    <>
     <section className='relative flex lg:flex-row flex-col max-container'>
       {alert.show && <Alert {...alert} />}
 
@@ -168,7 +170,10 @@ const Contact = () => {
         </Canvas>
       </div>
     </section>
+    <Footer/>
+    </>
   );
+  
 };
 
 export default Contact;

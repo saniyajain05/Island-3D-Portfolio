@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import  CTA  from "../components/CTA";
 import  projects  from "../constants/socialLinks";
 import { arrow } from "../assets/icons";
+import Footer from "../components/footer";
 
 const Projects = () => {
   return (
+    <>
     <section className='max-container'>
       <h1 className='head-text'>
         My{" "}
@@ -65,6 +67,8 @@ const Projects = () => {
 
       <CTA />
     </section>
+    <Footer/>
+    </>
   );
 };
 

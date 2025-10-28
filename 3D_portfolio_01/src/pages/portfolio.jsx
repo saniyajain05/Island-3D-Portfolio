@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import CTA from "../components/CTA";
 import { arrow } from "../assets/icons";
+import Footer from "../components/footer"; 
 
 // Example data: you can also import this from constants/portfolioLinks.js
 const portfolioItems = [
@@ -32,6 +33,7 @@ const portfolioItems = [
 
 const Portfolio = () => {
   return (
+    <>
     <section className="max-container">
       <h1 className="head-text">
         My{" "}
@@ -97,6 +99,8 @@ const Portfolio = () => {
 
       <CTA />
     </section>
+    <Footer/>
+    </>
   );
 };
 
