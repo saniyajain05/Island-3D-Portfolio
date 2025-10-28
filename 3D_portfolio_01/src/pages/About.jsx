@@ -3,6 +3,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
+import Footer from '../components/footer' 
+
 import CTA from "../components/CTA";
 import { skills } from "../constants/socialLinks";
 import resumePDF from "../assets/Saniya_Resume_Master.pdf";
