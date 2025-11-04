@@ -3,9 +3,9 @@
 /* Tailwind layers — must come after font imports */
 @import "tailwindcss";
 
-@import "tailwindcss";
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
 
 :root {
   --blue-rgb: 237 245 255;
