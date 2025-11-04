@@ -2,71 +2,98 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { arrow } from "../assets/icons";
 
-const PortfolioTile = ({ item }) => {
-  const settings = {
-    dots: true,
+
+
+const PortfolioTile = ({ item, fit = "cover" }) => {
+  const sliderSettings = {
+    dots: false,
     infinite: true,
-    speed: 600,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
+    arrows: true,                               // 👈 show arrows
+
+    autoplay: item.images?.length > 1,
     autoplaySpeed: 3000,
+    pauseOnHover: true,
   };
 
+  const fitClass = fit === "contain" ? "object-contain bg-black/5" : "object-cover";
+
   return (
-    <div className="flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-      {/* Left: Image or Carousel */}
-      <div className="md:w-1/2 w-full">
-        {item.images && item.images.length > 1 ? (
-          <Slider {...settings}>
-            {item.images.map((img, i) => (
+    <div className="card bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all">
+      <div className="grid items-stretch min-h-[300px] md:min-h-[340px] lg:min-h-[380px] md:[grid-template-columns:1.65fr_1fr]">
+        {/* LEFT SIDE - Carousel or single image */}
+        <div className="relative w-full overflow-hidden h-[300px] md:h-[340px] lg:h-[380px] group">
+          <div className="absolute inset-0 h-full">
+            {item.images?.length > 1 ? (
+              <div className="h-full
+                [&_.slick-slider]:h-full
+                [&_.slick-list]:h-full
+                [&_.slick-track]:h-full
+                [&_.slick-slide>div]:h-full">
+                <Slider {...sliderSettings}>
+                  {item.images.map((src, i) => (
+                    <Link
+                      key={i}
+                      to={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full h-full"
+                    >
+                      <img
+                        src={src}
+                        alt={`${item.name}-${i + 1}`}
+                        className={`w-full h-full ${fitClass}`}
+                        loading="lazy"
+                        draggable={false}
+                      />
+                    </Link>
+                  ))}
+                </Slider>
+              </div>
+            ) : (
               <Link
-                key={i}
                 to={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="block w-full h-full"
               >
                 <img
-                  src={img}
-                  alt={`${item.name}-${i}`}
-                  className="w-full h-72 object-cover"
+                  src={item.images?.[0]}
+                  alt={item.name}
+                  className={`w-full h-full ${fitClass}`}
+                  loading="lazy"
+                  draggable={false}
                 />
               </Link>
-            ))}
-          </Slider>
-        ) : (
-          <Link to={item.link} target="_blank" rel="noopener noreferrer">
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full h-72 object-cover hover:scale-105 transition-transform duration-500"
-            />
-          </Link>
-        )}
-      </div>
+            )}
+          </div>
+        </div>
 
-      {/* Right: Text content */}
-      <div className="md:w-1/2 w-full p-6 flex flex-col justify-center">
-        <h3 className="text-2xl font-semibold">{item.name}</h3>
-        <p className="mt-2 text-slate-500 leading-relaxed">
-          {item.description}
-        </p>
-        {item.tools && (
-          <p className="mt-3 text-sm text-slate-400">
-            <strong>Tools:</strong> {item.tools.join(", ")}
+        {/* RIGHT SIDE - Text (unchanged) */}
+        <div className="p-5 md:p-6 flex flex-col justify-center">
+          <h3 className="text-xl md:text-2xl font-semibold">{item.name}</h3>
+          <p className="mt-2 text-xs md:text-sm text-slate-400">
+          
+            {item.description}
           </p>
-        )}
-        <div className="mt-4 flex items-center gap-2">
-          <Link
-            to={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold text-blue-600 flex items-center gap-1"
-          >
-            View Work
-            <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
-          </Link>
+          {item.tools && (
+              <p className="mt-2 text-slate-500 text-sm md:text-base">
+              <strong>Tools:</strong> {item.tools.join(", ")}
+            </p>
+          )}
+          <div className="mt-3">
+            <Link
+              to={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 font-semibold inline-flex items-center gap-1 text-sm md:text-base"
+            >
+              View Work
+              <img src={arrow} alt="arrow" className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -123,6 +123,72 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 16px 0 40px #e4e4e4;
 }
 
+/* Fix Slick Carousel height issues */
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide > div {
+  height: 100% !important;
+}
+
+/* Use Slick's default arrows, just move them inside and raise the layer */
+.slick-prev,
+.slick-next {
+  z-index: 30 !important;
+}
+
+.slick-prev { left: 8px !important; }
+.slick-next { right: 8px !important; }
+
+/* Optional: make the default chevrons brighter for dark images */
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;         /* remove this line if you want the exact default color */
+  font-size: 22px;     /* tweak size if you want smaller/larger */
+}
+
+/* --- Slick carousel arrow fixes ---
+.slick-prev,
+.slick-next {
+  z-index: 30 !important;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #333;
+  font-size: 18px;
+  opacity: 1 !important;
+}
+
+.slick-prev {
+  left: 8px !important;
+}
+
+.slick-next {
+  right: 8px !important;
+}
+
+/* Ensures the arrows are always clickable */
+.slick-slider {
+  position: relative;
+  z-index: 20;
+} */
+
+
 .block-container .btn-back-red {
   background: linear-gradient(135deg, #ff4b1f -20%, #ff9068 120%);
 }
