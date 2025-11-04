@@ -1,4 +1,4 @@
-import PortfolioTile from "../components/PortfolioTile";
+import PortfolioTile from "../components/portfolioTile";
 import CTA from "../components/CTA";
 import Footer from "../components/footer";
 
