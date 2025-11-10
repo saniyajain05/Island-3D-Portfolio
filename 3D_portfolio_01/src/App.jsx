@@ -3,9 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { Home, About, Projects, Contact } from "./pages";
+import { Home, About, Projects, Contact, ThreeD } from "./pages";
 import Portfolio from "./pages/portfolio"
 import Navbar from "./components/Navbar";
+// import ThreeD from "./pages/3D";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/3D" element={<ThreeD />} />
       </Routes>
     </main>
   );

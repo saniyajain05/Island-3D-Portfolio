@@ -14,6 +14,17 @@ import auth1 from "../assets/images/auth-1.png";
 import auth2 from "../assets/images/auth-2.png";
 import auth3 from "../assets/images/auth-3.png";
 import hero from "../assets/images/hero.jpg";
+import noraRig from "../assets/images/noraRig1.png";
+// import nora1 from "../assets/images/Nora1.png";
+import nora2 from "../assets/images/Nora_scared_still_normaal 3 point.png";
+import nora3 from "../assets/images/Nora_scared_still_wireframe.png";
+import hero1 from "../assets/images/HeroChar-1.png";
+import clock1 from "../assets/images/clock1.jpeg";
+import clock2 from "../assets/images/clock2.jpeg";
+import clock3 from "../assets/images/clock3.jpeg";
+import decor1 from "../assets/images/decor-1.jpeg";
+import decor2 from "../assets/images/decor-2.jpeg";
+import decor3 from "../assets/images/decor-3.jpeg";
 
 
 // Data: update image paths to your actual assets
@@ -31,20 +42,53 @@ const portfolioItems = [
     link: "https://vimeo.com/1121339170",
   },
   {
-    name: "3D Modeling, Texturing & Rigging",
+    name: "Used Alarm Clock",
     description:
-      "Selected modeling, texturing, and rigging pieces using Maya, ZBrush, and Substance Painter.",
+      "Modeled and textured a rustic alarm clock",
     images: [
-      model1,
-      model2,
-      model3,
-      model4,
-      model5,
-      model6
+    clock1,
+      clock2,
+      clock3
     ],
-    tools: ["ZBrush", "Maya", "Substance Painter",],
-    link: "https://saniyajain6.artstation.com/albums/11661566",
+    tools: ["Maya", "Substance Painter", "Redshift"],
+    link: "https://saniyajain6.artstation.com/projects/1N634K",
   },
+  {
+    name: "Ixtal Shaman Character Model",
+    description:
+      "Girl with great talent who holds ancient magic and is able to hear the voice of all things. Modeled and textured.",
+    images: [
+      hero1
+    ],
+    tools: ["ZBrush", "Maya"],
+    link: "https://saniyajain6.artstation.com/projects/1xJ53G",
+  },
+   {
+    name: "Nora (The Midnight Library)",
+    description:
+      "Nora is stuck in the afterlife library and is trying to find her way out. Modeled, textured and rigged.",
+    images: [
+      
+      nora2,
+      nora3,
+      noraRig
+    ],
+    tools: ["Maya"],
+    link: "https://saniyajain6.artstation.com/projects/98K4lo",
+  },
+
+  {
+    name: "Minimalistic Decor Scene",
+    description:
+      "Contemporary, minimalistic decor and mid-centuary furniture filled scene. Lit and rendered scene in Maya with a minimalistic aesthetic.",
+    images: [
+      decor1,
+      decor2,
+      decor3
+    ],
+    tools: ["Maya", "Substance Painter", "Redshift", "Photoshop"],
+    link: "https://saniyajain6.artstation.com/projects/dyr5vQ?album_id=11661566",
+  }
   
   // {
   //   name: "Environment Lighting & Rendering",
