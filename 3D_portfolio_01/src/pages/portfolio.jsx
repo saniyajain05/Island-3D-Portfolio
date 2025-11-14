@@ -25,22 +25,11 @@ import clock3 from "../assets/images/clock3.jpeg";
 import decor1 from "../assets/images/decor-1.jpeg";
 import decor2 from "../assets/images/decor-2.jpeg";
 import decor3 from "../assets/images/decor-3.jpeg";
-
+import shot07process from "../assets/images/Shot_07.gif";
 
 // Data: update image paths to your actual assets
 const portfolioItems = [
-  {
-    name: "Authenticating – a Solo 3D Short Film",
-    description:
-      "A 3D animated short about Guy and his AI-driven car that goes wrong.",
-    images: [
-      auth1,
-      auth2,
-      auth3
-    ],
-    tools: ["Maya", " Adobe Premiere Pro", "Adobe After Effects", "Redshift"],
-    link: "https://vimeo.com/1121339170",
-  },
+  
   {
     name: "Used Alarm Clock",
     description:
@@ -88,7 +77,29 @@ const portfolioItems = [
     ],
     tools: ["Maya", "Substance Painter", "Redshift", "Photoshop"],
     link: "https://saniyajain6.artstation.com/projects/dyr5vQ?album_id=11661566",
-  }
+  },
+  {
+    name: "Composite Process",
+    description:
+      "A breakdown of the compositing process for a shot from my short film, including the original render, passes, and final composite.",
+    images: [
+      shot07process
+    ],
+    tools: ["Maya", "Adobe After Effects", "Redshift"],
+    link : "https://www.artstation.com/artwork/eRwn2P"
+  },
+  {
+    name: "Authenticating – a Solo 3D Short Film",
+    description:
+      "A 3D animated short about Guy and his AI-driven car that goes wrong.",
+    images: [
+      auth1,
+      auth2,
+      auth3
+    ],
+    tools: ["Maya", " Adobe Premiere Pro", "Adobe After Effects", "Redshift"],
+    link: "https://vimeo.com/1121339170",
+  },
   
   // {
   //   name: "Environment Lighting & Rendering",

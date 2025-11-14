@@ -16,10 +16,21 @@ import decor1 from "../assets/images/decor-1.jpeg";
 import decor2 from "../assets/images/decor-2.jpeg";
 import decor3 from "../assets/images/decor-3.jpeg";
 import hero from "../assets/images/hero.jpg";
+import shot07process from "../assets/images/Shot_07.gif";
 
 
 // Data: update image paths to your actual assets
 const portfolioItems = [
+  {
+    name: "Composite Process",
+    description:
+      "A breakdown of the compositing process for a shot from my short film, including the original render, passes, and final composite.",
+    images: [
+      shot07process
+    ],
+    tools: ["Maya", "Adobe After Effects", "Redshift"],
+    
+  },
   {
     name: "Used Alarm Clock",
     description:
