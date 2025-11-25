@@ -23,6 +23,14 @@ const twoDItems = [
     tools: ["Procreate"],
   },
   {
+    name: "Editing",
+    description: "Editing stock video to a song Numb Little Bug by Em Beihold. I used Premiere Pro to edit the video and After Effects to add some simple effects.",
+    orientation: "horizontal",
+    videoEmbedUrl: "https://player.vimeo.com/video/1064076475?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+    videoViewUrl: "https://vimeo.com/1064076475?fl=tl&fe=ec", // optional: 'view' link
+    tools: ["Premiere Pro", "After Effects"],
+  },
+  {
     name: "Marketing for DePaul Global Engagment",
     description: "Marketing materials for DePaul's Global Engagement office, including social media graphics and event posters adhereing to the university's brand guidelines.",
     orientation: "horizontal", // NEW
@@ -57,16 +65,29 @@ const TwoD = () => {
               <h2 className="text-2xl font-semibold mb-2">{item.name}</h2>
               <p className="text-slate-600 mb-4">{item.description}</p>
 
-              {/* Full‑Width Images */}
               <div className="flex flex-col gap-6">
-                {item.images.map((src, index) => (
-                  <img
-                    key={index}
-                    src={src}
-                    alt={`${item.name} asset ${index + 1}`}
-                    className="rounded-lg w-full object-cover"
-                  />
-                ))}
+                {item.videoEmbedUrl ? (
+                  // 🎬 Responsive 16:9 video embed
+                  <div className="relative w-full pt-[56.25%]">
+                    <iframe
+                      src={item.videoEmbedUrl}
+                      title={item.name}
+                      className="absolute inset-0 w-full h-full rounded-lg"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                ) : (
+                  item.images?.map((src, index) => (
+                    <img
+                      key={index}
+                      src={src}
+                      alt={`${item.name} asset ${index + 1}`}
+                      className="rounded-lg w-full object-cover"
+                    />
+                  ))
+                )}
               </div>
 
               <div className="flex gap-2 flex-wrap mt-4">

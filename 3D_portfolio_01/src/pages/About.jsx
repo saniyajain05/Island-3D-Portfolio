@@ -51,7 +51,7 @@ const About = () => {
 
       {/* === PDF Portfolio Section === */}
       <div className="py-16 flex flex-col items-center">
-        <h3 className="subhead-text mb-8">My Portfolio PDF</h3>
+        <h3 className="subhead-text mb-8">My Resume</h3>
 
         <div className="w-full flex justify-center">
           <div className="relative w-full max-w-4xl aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-slate-200">
