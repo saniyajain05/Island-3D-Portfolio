@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
+import ReactMarkdown from "react-markdown";
 
 const PortfolioTile = ({ item }) => {
   const [popupImage, setPopupImage] = useState(null);
@@ -32,7 +33,6 @@ const PortfolioTile = ({ item }) => {
 
   return (
     <div className="w-full max-w-5xl mx-auto p-6 rounded-2xl bg-white shadow-lg border border-slate-200 space-y-6">
-
       {/* POPUP MODAL */}
       {popupImage && (
         <div
@@ -88,9 +88,15 @@ const PortfolioTile = ({ item }) => {
       {/* MIDDLE — Description + Divider + Tools */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
         {/* Explanation */}
-        <p className="flex-1 text-slate-600 leading-relaxed">
-          {item.description}
-        </p>
+        <div className="flex-1 text-slate-600 leading-relaxed space-y-3">
+          {Array.isArray(item.description) ? (
+            item.description.map((para, i) => (
+              <ReactMarkdown key={i}>{para}</ReactMarkdown>
+            ))
+          ) : (
+            <p>{item.description}</p>
+          )}
+        </div>
 
         {/* Vertical line */}
         <div className="hidden md:block w-px self-stretch bg-slate-200" />

@@ -26,9 +26,31 @@ import guyRig from "../assets/images/GuyRig.gif";
 import guyTurn from "../assets/images/Guy_Turntable.gif";
 import trogRig from "../assets/images/JainSaniya_Trog_ROM.gif";
 import guyTurnImg from "../assets/images/GUyRigAnipng.png";
+import resumePDF from "../assets/Saniya_Resume_Master.pdf";
 
 // Data: update image paths to your actual assets
 const portfolioItems = [
+  {
+    name: "City Generator Tool",
+    description: [
+  "The need for a city generator tool arose when I was working on my solo short film.",
+  "I created a python tool to quickly generate a city layout with buildings, roads and arrange buildings I had modeled in a city-like pattern.",
+  "This was quite useful in generating city blocks further in the distance.",
+
+  "**Problem**: Quick prototyping for city layouts in 3D scenes can be time-consuming and tedious when done manually.",
+  "**Solution**: Developed a Python-based city generator tool that automates the creation of city layouts, including buildings and roads, allowing for rapid prototyping and iteration.",
+  "Step 1: Create a plane according to user input",
+  "Step 2: Create grid, randomly pick primary curves for major roads",
+  "Step 3: Pick custom buildings from scene and add to the building list",
+  "Step 4: Generate city by placing buildings along the roads with a spawn probability of 75% and add parking lots where buildings don't appear",
+],
+      images: [
+      cityGen1,
+ 
+    ],
+    tools: ["Maya", " Python", "Redshift"],
+    
+  },
   
   {
     name: "Used Alarm Clock",
@@ -44,17 +66,7 @@ const portfolioItems = [
     tools: ["Maya", "Substance Painter", "Redshift"],
     link: "https://saniyajain6.artstation.com/projects/1N634K",
   },
-  {
-    name: "City Genrator Tool",
-    description:
-      "The need for a city genreator tool arose when I was working on my solo short film. I created a python tool to quickly generate a city layout with buildings, roads and arrange buildings I had modeled in a city like pettern. This was quite useful in generating city blocks further in the distance.",
-    images: [
-      cityGen1,
- 
-    ],
-    tools: ["Maya", " Python", "Redshift"],
-    
-  },
+  
 //   {
 //     name: "Ixtal Shaman Character Model",
 //     description:
@@ -85,7 +97,7 @@ const portfolioItems = [
   {
     name: "Minimalistic Decor Scene",
     description:
-      "Contemporary, minimalistic decor and mid-centuary furniture filled scene. Lit and rendered scene in Maya with a minimalistic aesthetic.",
+      "Contemporary, minimalistic decor and mid-century furniture filled scene. Lit and rendered scene in Maya with a minimalistic aesthetic.",
     images: [
       decor1,
       decor2,
@@ -133,16 +145,33 @@ const Portfolio = () => {
     
       <section className="max-container">
         <h1 className="head-text">
-          My{" "}
+          Hi, I'm{" "}
           <span className="blue-gradient_text drop-shadow font-semibold">
-            Portfolio
+            Saniya!
           </span>
         </h1>
+        <h3 className="subhead-text mt-3">
+          A Technical Artist in the making!
+        </h3>
 
     
 
         <p className="text-slate-500 mt-2 leading-relaxed">
-          Here’s a collection of my Technical Art work in my pursuit to becoming a Techincal Artist OR a Technical Director!
+          I am a senior with a double major in Computer Science and 3D Animation, with a minor in Data Science and 
+          Illustration. My passion lies in the intersection of technology and creativity, where I strive to bring 
+          innovative ideas to life by optimizing 3D art and technical solutions.
+        </p>
+
+        <p className="text-slate-500 mt-2 leading-relaxed">
+          <div className="mt-6">
+          <a
+            href={resumePDF}
+            download
+            className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition font-medium"
+          >
+            View My Resume!
+          </a>
+        </div>
         </p>
 
         {/* Tiles */}
