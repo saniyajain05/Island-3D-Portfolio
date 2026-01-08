@@ -24,7 +24,7 @@ const Navbar = () => {
 
         <nav className="flex text-lg gap-7 font-medium"> </nav>
         <NavLink to= "/TD_TA" className={({isActive}) => isActive? 'text-blue-500' : 'text-black'}>
-            TD/TA
+            TD
         </NavLink>
 
         <nav className="flex text-lg gap-7 font-medium"> </nav>
