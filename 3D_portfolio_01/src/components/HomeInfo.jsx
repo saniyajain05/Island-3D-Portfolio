@@ -11,7 +11,12 @@ const HomeInfo = ({ currentStage }) => {
         👋
         <br />
         A 3D Animator and Software Developer!
+        <br />
+          <span className='text-sm text-white mt-2 block'>
+          Spin the Island to know more!
+        </span>
       </h1>
+      
     );
 
   if (currentStage === 2) {

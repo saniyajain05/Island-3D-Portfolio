@@ -27,6 +27,7 @@ import guyTurn from "../assets/images/Guy_Turntable.gif";
 import trogRig from "../assets/images/JainSaniya_Trog_ROM.gif";
 import guyTurnImg from "../assets/images/GUyRigAnipng.png";
 import resumePDF from "../assets/Saniya_Resume_Master.pdf";
+import Island from "../assets/images/3DIsland.gif";
 
 // Data: update image paths to your actual assets
 const portfolioItems = [
@@ -39,16 +40,32 @@ const portfolioItems = [
 
   "**Problem**: Quick prototyping for city layouts in 3D scenes can be time-consuming and tedious when done manually.",
   "**Solution**: Developed a Python-based city generator tool that automates the creation of city layouts, including buildings and roads, allowing for rapid prototyping and iteration.",
-  "Step 1: Create a plane according to user input",
-  "Step 2: Create grid, randomly pick primary curves for major roads",
-  "Step 3: Pick custom buildings from scene and add to the building list",
-  "Step 4: Generate city by placing buildings along the roads with a spawn probability of 75% and add parking lots where buildings don't appear",
+  "Step 1: Create a plane according to user input.",
+  "Step 2: Create grid, randomly pick primary curves for major roads.",
+  "Step 3: Pick custom buildings from scene and add to the building list.",
+  "Step 4: Generate city by placing buildings along the roads with a spawn probability of 75% and add parking lots where buildings don't appear.",
+  "Impact: Reduced manual layout work for background city shots and enabled rapid iteration for lighting and camera tests."
 ],
       images: [
       cityGen1,
  
     ],
     tools: ["Maya", " Python", "Redshift"],
+    
+  },
+
+  {
+    name: "Interactive 3D Island",
+    description: [
+  "A real time 3D system engineered to act as an interactive portfolio. Created to express my interest in ART as well as Computer Science.",
+  "Complete with elements of short animations as well as structured 3D GLB objects.",
+
+],
+      images: [
+      Island,
+ 
+    ],
+    tools: ["Maya", " Three.js", "Vite", "JavaScriptXML"],
     
   },
   
@@ -64,7 +81,7 @@ const portfolioItems = [
 
     ],
     tools: ["Maya", "Substance Painter", "Redshift"],
-    link: "https://saniyajain6.artstation.com/projects/1N634K",
+   
   },
   
 //   {
@@ -151,7 +168,7 @@ const Portfolio = () => {
           </span>
         </h1>
         <h3 className="subhead-text mt-3">
-          A Technical Artist in the making!
+          A Technical Director in the making!
         </h3>
 
     
@@ -160,6 +177,8 @@ const Portfolio = () => {
           I am a senior with a double major in Computer Science and 3D Animation, with a minor in Data Science and 
           Illustration. My passion lies in the intersection of technology and creativity, where I strive to bring 
           innovative ideas to life by optimizing 3D art and technical solutions.
+
+          
         </p>
 
         <p className="text-slate-500 mt-2 leading-relaxed">
@@ -179,6 +198,19 @@ const Portfolio = () => {
           {portfolioItems.map((item) => (
             <PortfolioTile key={item.name} item={item} />
           ))}
+        </div>
+
+       
+        <div className="w-full flex justify-center my-10">
+          <div className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://player.vimeo.com/video/1126261521"
+              title="Animation Reel"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
         </div>
 
         <hr className="border-slate-200" />
