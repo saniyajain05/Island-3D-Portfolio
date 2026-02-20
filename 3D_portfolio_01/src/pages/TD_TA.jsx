@@ -168,7 +168,7 @@ const Portfolio = () => {
           </span>
         </h1>
         <h3 className="subhead-text mt-3">
-          A Technical Director in the making!
+          Technical Director in training specializing in Maya tools and production pipelines!
         </h3>
 
     
@@ -178,7 +178,7 @@ const Portfolio = () => {
           Illustration. My passion lies in the intersection of technology and creativity, where I strive to bring 
           innovative ideas to life by optimizing 3D art and technical solutions.
 
-          
+
         </p>
 
         <p className="text-slate-500 mt-2 leading-relaxed">

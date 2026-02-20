@@ -6,6 +6,7 @@ import { arrow } from "../assets/icons";
 import Footer from "../components/footer";
 import PortfolioTile from "../components/portfolioTile";
 import Island from "../assets/images/3DIsland.gif";
+import LiveTranstatingDevice from "../assets/images/LiveLanguageTranslationDevice.png";
 
 const projectItems = [
   {
@@ -38,6 +39,7 @@ const projectItems = [
       "An IoT-based language translation device enabling real-time speech translation.",
     link: "https://github.com/saniyajain05/Live-Language-Translation-Device",
     iconUrl: "/assets/icons/mic.png",
+    images: [LiveTranstatingDevice,],
     theme: "bg-yellow-500",
   },
   {
