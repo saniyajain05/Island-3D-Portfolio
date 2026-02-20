@@ -6,7 +6,7 @@ import { arrow } from "../assets/icons";
 import Footer from "../components/footer";
 import PortfolioTile from "../components/portfolioTile";
 import Island from "../assets/images/3DIsland.gif";
-import LiveTranstatingDevice from "../assets/images/LiveLanguageTranslationDevice.png";
+import LiveTranstatingDevice from "../assets/images/LiveTranstatingDevice.png";
 
 const projectItems = [
   {

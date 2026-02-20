@@ -44,7 +44,7 @@ const portfolioItems = [
   "Step 2: Create grid, randomly pick primary curves for major roads.",
   "Step 3: Pick custom buildings from scene and add to the building list.",
   "Step 4: Generate city by placing buildings along the roads with a spawn probability of 75% and add parking lots where buildings don't appear.",
-  "Impact: Reduced manual layout work for background city shots and enabled rapid iteration for lighting and camera tests."
+  "**Impact**: Reduced manual layout work for background city shots and enabled rapid iteration for lighting and camera tests."
 ],
       images: [
       cityGen1,
@@ -57,8 +57,15 @@ const portfolioItems = [
   {
     name: "Interactive 3D Island",
     description: [
-  "A real time 3D system engineered to act as an interactive portfolio. Created to express my interest in ART as well as Computer Science.",
-  "Complete with elements of short animations as well as structured 3D GLB objects.",
+  "This project is an interactive 3D portfolio built using React Three Fiber to deliver a real-time, immersive user experience directly in the browser. My goal was to combine modern frontend architecture with WebGL rendering to create a performant, scalable, and maintainable 3D interface that replaces traditional static portfolio layouts.",
+  "**Problem**: Traditional portfolios can be static and may not fully showcase real time lighting and structure of a 3D scene.",
+  "**Solution**: Built a real time camera interactive modular system with reusalbe assets. Optimized laoding times with code splitting and lazy loading. Built a deterministic loading and scene state pipeline to ensure smooth user experience.",
+  "Architecture: The project is structured with a clear separation of concerns. The React component hierarchy manages UI state and interactions, while Three.js handles the 3D rendering. This modular approach allows for easy maintenance and scalability.",
+  
+  "Asset Integration: The 3D assets were integrated as reusable components, allowing them to be easily reused or swapped without affecting the scene architecture. This mirrors production pipelines where assets and rendering logic remain decoupled",
+  "Rendering: Implemented a real-time rendering pipeline using React Three Fiber, which abstracts Three.js into a declarative React model. The scene uses multiple light sources—directional, ambient, and hemisphere lighting—to simulate depth and realism while balancing performance."
+
+
 
 ],
       images: [
