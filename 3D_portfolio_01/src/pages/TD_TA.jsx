@@ -26,7 +26,7 @@ import guyRig from "../assets/images/GuyRig.gif";
 import guyTurn from "../assets/images/Guy_Turntable.gif";
 import trogRig from "../assets/images/JainSaniya_Trog_ROM.gif";
 import guyTurnImg from "../assets/images/GUyRigAnipng.png";
-import resumePDF from "../assets/Saniya_Resume_Master.pdf";
+import resumePDF from "../assets/Saniya_Resume_Areeg_2_20_2026 (1).pdf";
 import Island from "../assets/images/3DIsland.gif";
 
 // Data: update image paths to your actual assets
