@@ -175,7 +175,7 @@ const Portfolio = () => {
           </span>
         </h1>
         <h3 className="subhead-text mt-3">
-          Technical Director in training specializing in Maya tools and production pipelines!
+          Technical Director specializing in Maya tools and production pipelines!
         </h3>
 
     
