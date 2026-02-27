@@ -58,8 +58,8 @@ const portfolioItems = [
     name: "Interactive 3D Island",
     description: [
   "This project is an interactive 3D portfolio built using React Three Fiber to deliver a real-time, immersive user experience directly in the browser. My goal was to combine modern frontend architecture with WebGL rendering to create a performant, scalable, and maintainable 3D interface that replaces traditional static portfolio layouts.",
-  "**Problem**: Traditional portfolios can be static and may not fully showcase real time lighting and structure of a 3D scene.",
-  "**Solution**: Built a real time camera interactive modular system with reusalbe assets. Optimized laoding times with code splitting and lazy loading. Built a deterministic loading and scene state pipeline to ensure smooth user experience.",
+  "**Problem**: Traditional portfolios can be static and may not fully showcase real-time lighting and structure of a 3D scene.",
+  "**Solution**: Built a real-time camera interactive modular system with reusable assets. Optimized loading times with code splitting and lazy loading. Built a deterministic loading and scene state pipeline to ensure smooth user experience.",
   "Architecture: The project is structured with a clear separation of concerns. The React component hierarchy manages UI state and interactions, while Three.js handles the 3D rendering. This modular approach allows for easy maintenance and scalability.",
   
   "Asset Integration: The 3D assets were integrated as reusable components, allowing them to be easily reused or swapped without affecting the scene architecture. This mirrors production pipelines where assets and rendering logic remain decoupled",
