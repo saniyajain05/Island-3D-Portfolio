@@ -70,7 +70,7 @@ const portfolioItems = [
   {
     name: "Minimalistic Decor Scene",
     description:
-      "Contemporary, minimalistic decor and mid-centuary furniture filled scene. Lit and rendered scene in Maya with a minimalistic aesthetic.",
+      "Contemporary, minimalistic decor and mid-century furniture-filled scene. Lit and rendered scene in Maya with a minimalistic aesthetic.",
     images: [
       decor1,
       decor2,
@@ -104,7 +104,7 @@ const ThreeD = () => {
 
 
         <p className="text-slate-500 mt-2 leading-relaxed">
-          A more compehensive list of my 3D work, including modeling, texturing, rigging and lighting studies.
+          A more comprehensive list of my 3D work, including modeling, texturing, rigging and lighting studies.
         </p>
 
         {/* Tiles */}
