@@ -7,7 +7,7 @@ import Footer from '../components/footer'
 
 import CTA from "../components/CTA";
 import { skills } from "../constants/socialLinks";
-import resumePDF from "../assets/Saniya_Resume_Areeg_2_20_2026 (1).docx";
+import resumePDF from "../assets/Saniya_Resume_Areeg_2_20_2026 (1).pdf";
 
 
 import "react-vertical-timeline-component/style.min.css";
