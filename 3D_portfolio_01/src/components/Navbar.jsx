@@ -27,10 +27,10 @@ const Navbar = () => {
             TD
         </NavLink>
 
-        <nav className="flex text-lg gap-7 font-medium"> </nav>
-        <NavLink to= "/projects" className={({isActive}) => isActive? 'text-blue-500' : 'text-black'}>
-            Projects
-        </NavLink>
+        //<nav className="flex text-lg gap-7 font-medium"> </nav>
+        //<NavLink to= "/projects" className={({isActive}) => isActive? 'text-blue-500' : 'text-black'}>
+            //Projects
+        //</NavLink>
 
         <nav className="flex text-lg gap-7 font-medium"> </nav>
         <NavLink to= "/contact" className={({isActive}) => isActive? 'text-blue-500' : 'text-black'}>
