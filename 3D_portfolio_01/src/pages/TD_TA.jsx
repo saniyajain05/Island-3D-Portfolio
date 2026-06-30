@@ -28,7 +28,8 @@ import trogRig from "../assets/images/JainSaniya_Trog_ROM.gif";
 import guyTurnImg from "../assets/images/GUyRigAnipng.png";
 import resumePDF from "../assets/Saniya_Resume_Areeg_2_20_2026 (1).pdf";
 import Island from "../assets/images/3DIsland.gif";
-
+import AlarmClockGIF from "../assets/images/Saniya_Jain_Alarm_Clock_Look_Dev_wireframe_02_1.gif";
+import UVSClock from "../assets/images/UVs_Clock.jpg"
 // Data: update image paths to your actual assets
 const portfolioItems = [
   {
@@ -80,8 +81,21 @@ const portfolioItems = [
     name: "Used Alarm Clock",
     description:
       "Modeled and textured a rustic alarm clock",
+      heroImages: [
+      clock1,
+      clock2,
+      clock3
+      
+    ],
+
+    bottomImages: [AlarmClockGIF,
+      clock4,
+      UVSClock],
+    carousel: true,
+
     images: [
     clock1,
+      AlarmClockGIF,
       clock2,
       clock3,
       clock4
@@ -128,7 +142,7 @@ const portfolioItems = [
       decor3
     ],
     tools: ["Maya", "Substance Painter", "Redshift", "Photoshop"],
-    link: "https://saniyajain6.artstation.com/projects/dyr5vQ?album_id=11661566",
+    //link: "https://saniyajain6.artstation.com/projects/dyr5vQ?album_id=11661566",
   },
   {
     name: "Composite Process",
@@ -138,7 +152,7 @@ const portfolioItems = [
       shot07process
     ],
     tools: ["Maya", "Adobe After Effects", "Redshift"],
-    link : "https://www.artstation.com/artwork/eRwn2P"
+    //link : "https://www.artstation.com/artwork/eRwn2P"
   },
   // {
   //   name: "Authenticating – a Solo 3D Short Film",
@@ -180,32 +194,42 @@ const Portfolio = () => {
 
     
 
-        <p className="text-slate-500 mt-2 leading-relaxed">
-          I am a senior with a double major in Computer Science and 3D Animation, with a minor in Data Science and 
-          Illustration. My passion lies in the intersection of technology and creativity, where I strive to bring 
-          innovative ideas to life by optimizing 3D art and technical solutions.
+<p className="text-slate-500 mt-2 leading-relaxed">
+  I am a college graduate with a double major in Computer Science and 3D Animation, with a minor in Data Science and 
+  Illustration. My passion lies in the intersection of technology and creativity, where I strive to bring 
+  innovative ideas to life by optimizing 3D art and technical solutions.
+</p>
+
+<div className="mt-6 flex flex-wrap gap-4">
+  <a
+    href={resumePDF}
+    download
+    className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition font-medium"
+  >
+    View My Resume!
+  </a>
+
+  <a
+    href="https://saniyajain6.artstation.com/albums/11661566"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 bg-slate-900 text-white rounded-xl shadow-md hover:bg-slate-700 transition font-medium"
+  >
+    Check Out My ArtStation
+  </a>
+</div>
 
 
-        </p>
 
-        <p className="text-slate-500 mt-2 leading-relaxed">
-          <div className="mt-6">
-          <a
-            href={resumePDF}
-            download
-            className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition font-medium"
-          >
-            View My Resume!
-          </a>
-        </div>
-        </p>
+{/* Tiles */}
+<div className="flex flex-col gap-12 my-16">
+  {portfolioItems.map((item) => (
+    <PortfolioTile key={item.name} item={item} />
+  ))}
+</div>
 
-        {/* Tiles */}
-        <div className="flex flex-col gap-12 my-16">
-          {portfolioItems.map((item) => (
-            <PortfolioTile key={item.name} item={item} />
-          ))}
-        </div>
+
+
 
        
         <div className="w-full flex justify-center my-10">
@@ -219,6 +243,24 @@ const Portfolio = () => {
             ></iframe>
           </div>
         </div>
+        <div className="mt-10 p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
+  <h2 className="text-2xl font-semibold text-slate-900">
+    Check out more of my work on ArtStation
+  </h2>
+
+  <p className="text-slate-500 mt-3 leading-relaxed">
+    You can find more of my 3D modeling, texturing, lighting, rendering, and animation work on my ArtStation portfolio.
+  </p>
+
+  <a
+    href="https://saniyajain6.artstation.com/albums/11661566"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 mt-5 px-5 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition font-medium"
+  >
+    Visit My ArtStation
+  </a>
+</div>
 
         <hr className="border-slate-200" />
         <CTA />
