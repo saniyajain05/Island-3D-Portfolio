@@ -27,10 +27,10 @@ const HomeInfo = ({ currentStage }) => {
           Always been Passionate about both <br/> So Best of both Worlds!
         </p>
 
-        <Link to='/about' className='neo-brutalism-white neo-btn'>
+        {/* <Link to='/about' className='neo-brutalism-white neo-btn'>
           Which Softwares do I use and my Resume!
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
-        </Link>
+        </Link> */}
       </div>
     );
   }
@@ -42,7 +42,7 @@ const HomeInfo = ({ currentStage }) => {
           Look at the Projects I've Done!
         </p>
 
-        <Link to='/projects' className='neo-brutalism-white neo-btn'>
+        <Link to='/TD_TA' className='neo-brutalism-white neo-btn'>
           Projects
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
