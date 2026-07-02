@@ -17,6 +17,7 @@ import decor2 from "../assets/images/decor-2.jpeg";
 import decor3 from "../assets/images/decor-3.jpeg";
 import hero from "../assets/images/hero.jpg";
 import shot07process from "../assets/images/Shot_07.gif";
+import resumePDF from "../assets/Saniya_Resume_Areeg_2_20_2026 (1).pdf";
 
 
 // Data: update image paths to your actual assets
@@ -107,12 +108,37 @@ const ThreeD = () => {
           A more comprehensive list of my 3D work, including modeling, texturing, rigging and lighting studies.
         </p>
 
+        <div className="mt-6 flex flex-wrap gap-4">
+  <a
+    href={resumePDF}
+    download
+    className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition font-medium"
+  >
+    View My Resume!
+  </a>
+
+  <a
+    href="https://saniyajain6.artstation.com/albums/11661566"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-6 py-3 bg-slate-900 text-white rounded-xl shadow-md hover:bg-slate-700 transition font-medium"
+  >
+    Check Out My ArtStation
+  </a>
+</div>
+
         {/* Tiles */}
         <div className="flex flex-col gap-12 my-16">
           {portfolioItems.map((item) => (
             <PortfolioTile key={item.name} item={item} />
           ))}
+
+        
         </div>
+
+        
+
+        
 
         <hr className="border-slate-200" />
         <CTA />

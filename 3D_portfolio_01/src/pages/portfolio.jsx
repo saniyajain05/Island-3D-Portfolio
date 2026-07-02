@@ -26,7 +26,10 @@ import decor1 from "../assets/images/decor-1.jpeg";
 import decor2 from "../assets/images/decor-2.jpeg";
 import decor3 from "../assets/images/decor-3.jpeg";
 import shot07process from "../assets/images/Shot_07.gif";
-
+import resumePDF from "../assets/Saniya_Resume_Areeg_2_20_2026 (1).pdf";
+import AlarmClockGIF from "../assets/images/Saniya_Jain_Alarm_Clock_Look_Dev_wireframe_02_1.gif";
+import UVSClock from "../assets/images/UVs_Clock.jpg";
+import clock4 from "../assets/images/render_of_SubstancePainter_ofClock.gif";
 // Data: update image paths to your actual assets
 const portfolioItems = [
   
@@ -37,7 +40,10 @@ const portfolioItems = [
     images: [
     clock1,
       clock2,
-      clock3
+      clock3,
+      clock4,
+      AlarmClockGIF,
+      UVSClock,
     ],
     tools: ["Maya", "Substance Painter", "Redshift"],
     link: "https://saniyajain6.artstation.com/projects/1N634K",
@@ -148,6 +154,26 @@ const Portfolio = () => {
             <PortfolioTile key={item.name} item={item} />
           ))}
         </div>
+
+        <div className="mt-6 flex flex-wrap gap-4">
+        <a
+          href="https://docs.google.com/document/d/1R8xSjlH67lz37TqBSRdaroKUv60euhAn/edit"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:bg-blue-700 transition font-medium"
+        >
+          View My Resume!
+        </a>
+
+        <a
+          href="https://saniyajain6.artstation.com/albums/11661566"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-3 bg-slate-900 text-white rounded-xl shadow-md hover:bg-slate-700 transition font-medium"
+        >
+          Check Out My ArtStation
+        </a>
+      </div>
 
         <hr className="border-slate-200" />
         <CTA />
